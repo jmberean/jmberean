@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex Morgan - Marketing Professional</title>
+    <title>John Berean - Solution Architect & Software Engineer</title>
     <style>
         * {
             margin: 0;
@@ -13,7 +13,7 @@
 
         body {
             font-family: 'Inter', system-ui, -apple-system, sans-serif;
-            background: linear-gradient(135deg, #1a202c 0%, #2d3748 50%, #1a365d 100%);
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #16213e 100%);
             color: #ffffff;
             overflow-x: hidden;
         }
@@ -46,7 +46,7 @@
         .logo {
             font-size: 1.5rem;
             font-weight: 700;
-            background: linear-gradient(45deg, #f6ad55, #4299e1, #63b3ed);
+            background: linear-gradient(45deg, #00d4ff, #7b2ff7, #ff107e);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -67,7 +67,7 @@
         }
 
         .nav-links a:hover {
-            color: #f6ad55;
+            color: #00d4ff;
         }
 
         .nav-links a::after {
@@ -77,7 +77,7 @@
             left: 0;
             width: 0;
             height: 2px;
-            background: linear-gradient(45deg, #f6ad55, #4299e1);
+            background: linear-gradient(45deg, #00d4ff, #7b2ff7);
             transition: width 0.3s ease;
         }
 
@@ -101,7 +101,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="grad" cx="50%" cy="50%" r="50%"><stop offset="0%" style="stop-color:%23f6ad55;stop-opacity:0.08"/><stop offset="100%" style="stop-color:%234299e1;stop-opacity:0.04"/></radialGradient></defs><circle cx="200" cy="200" r="100" fill="url(%23grad)"/><circle cx="800" cy="300" r="150" fill="url(%23grad)"/><circle cx="400" cy="700" r="120" fill="url(%23grad)"/></svg>');
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="grad" cx="50%" cy="50%" r="50%"><stop offset="0%" style="stop-color:%2300d4ff;stop-opacity:0.08"/><stop offset="100%" style="stop-color:%237b2ff7;stop-opacity:0.04"/></radialGradient></defs><circle cx="200" cy="200" r="100" fill="url(%23grad)"/><circle cx="800" cy="300" r="150" fill="url(%23grad)"/><circle cx="400" cy="700" r="120" fill="url(%23grad)"/></svg>');
             animation: float 20s ease-in-out infinite;
         }
 
@@ -120,7 +120,7 @@
             font-weight: 800;
             line-height: 1.1;
             margin-bottom: 1rem;
-            background: linear-gradient(45deg, #ffffff, #4299e1, #f6ad55);
+            background: linear-gradient(45deg, #ffffff, #00d4ff, #7b2ff7);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -128,8 +128,8 @@
         }
 
         @keyframes textGlow {
-            from { filter: drop-shadow(0 0 10px rgba(66, 153, 225, 0.3)); }
-            to { filter: drop-shadow(0 0 20px rgba(246, 173, 85, 0.4)); }
+            from { filter: drop-shadow(0 0 10px rgba(0, 212, 255, 0.3)); }
+            to { filter: drop-shadow(0 0 20px rgba(123, 47, 247, 0.4)); }
         }
 
         .hero-subtitle {
@@ -167,7 +167,7 @@
         }
 
         .btn-primary {
-            background: linear-gradient(45deg, #f6ad55, #4299e1);
+            background: linear-gradient(45deg, #00d4ff, #7b2ff7);
             color: white;
         }
 
@@ -208,7 +208,7 @@
             font-weight: 700;
             text-align: center;
             margin-bottom: 3rem;
-            background: linear-gradient(45deg, #ffffff, #4299e1);
+            background: linear-gradient(45deg, #ffffff, #00d4ff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -252,7 +252,7 @@
         .stat-number {
             font-size: 2.5rem;
             font-weight: 700;
-            color: #f6ad55;
+            color: #00d4ff;
         }
 
         .stat-label {
@@ -260,18 +260,18 @@
             margin-top: 0.5rem;
         }
 
-        /* Services Section */
-        .services {
+        /* Skills Section */
+        .skills {
             background: rgba(255, 255, 255, 0.02);
         }
 
-        .services-grid {
+        .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
         }
 
-        .service-card {
+        .skill-card {
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(20px);
             padding: 2rem;
@@ -282,90 +282,121 @@
             overflow: hidden;
         }
 
-        .service-card::before {
+        .skill-card::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             height: 3px;
-            background: linear-gradient(45deg, #f6ad55, #4299e1, #63b3ed);
+            background: linear-gradient(45deg, #00d4ff, #7b2ff7, #ff107e);
             transform: scaleX(0);
             transition: transform 0.3s ease;
         }
 
-        .service-card:hover::before {
+        .skill-card:hover::before {
             transform: scaleX(1);
         }
 
-        .service-card:hover {
+        .skill-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
         }
 
-        .service-icon {
+        .skill-icon {
             font-size: 3rem;
             margin-bottom: 1rem;
-            background: linear-gradient(45deg, #f6ad55, #4299e1);
+            background: linear-gradient(45deg, #00d4ff, #7b2ff7);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
 
-        .service-title {
+        .skill-title {
             font-size: 1.5rem;
             font-weight: 600;
             margin-bottom: 1rem;
             color: #ffffff;
         }
 
-        .service-description {
+        .skill-description {
             color: #cccccc;
             line-height: 1.6;
         }
 
-        /* Portfolio Section */
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
+        /* Experience Section */
+        .experience-timeline {
+            position: relative;
+            padding: 2rem 0;
         }
 
-        .portfolio-item {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 20px;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+        .experience-timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, #00d4ff, #7b2ff7);
         }
 
-        .portfolio-item:hover {
-            transform: scale(1.03);
-        }
-
-        .portfolio-image {
-            height: 200px;
-            background: linear-gradient(45deg, #f6ad55, #4299e1, #63b3ed);
+        .experience-item {
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.2rem;
-            font-weight: 600;
+            margin-bottom: 4rem;
+            position: relative;
         }
 
-        .portfolio-content {
-            padding: 1.5rem;
+        .experience-item:nth-child(even) {
+            flex-direction: row-reverse;
         }
 
-        .portfolio-title {
-            font-size: 1.3rem;
+        .experience-content {
+            width: 45%;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            padding: 2rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .experience-content:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .experience-dot {
+            width: 20px;
+            height: 20px;
+            background: #00d4ff;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .experience-title {
+            font-size: 1.5rem;
             font-weight: 600;
             margin-bottom: 0.5rem;
             color: #ffffff;
         }
 
-        .portfolio-description {
+        .experience-company {
+            color: #00d4ff;
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-date {
+            color: #999999;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .experience-description {
             color: #cccccc;
             line-height: 1.6;
         }
@@ -413,7 +444,7 @@
         .form-group input:focus,
         .form-group textarea:focus {
             outline: none;
-            border-color: #f6ad55;
+            border-color: #00d4ff;
         }
 
         .contact-info {
@@ -437,7 +468,7 @@
 
         .contact-icon {
             font-size: 1.5rem;
-            color: #f6ad55;
+            color: #00d4ff;
         }
 
         /* Footer */
@@ -472,6 +503,25 @@
             .hero h1 {
                 font-size: 2.5rem;
             }
+
+            .experience-timeline::before {
+                left: 20px;
+            }
+
+            .experience-item,
+            .experience-item:nth-child(even) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .experience-content {
+                width: 100%;
+                margin-left: 40px;
+            }
+
+            .experience-dot {
+                left: 20px;
+            }
         }
 
         /* Scroll animations */
@@ -485,18 +535,34 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+        /* Code animation */
+        .code-bg {
+            position: absolute;
+            font-family: 'Courier New', monospace;
+            color: rgba(0, 212, 255, 0.1);
+            font-size: 14px;
+            white-space: pre;
+            pointer-events: none;
+            animation: codeScroll 20s linear infinite;
+        }
+
+        @keyframes codeScroll {
+            from { transform: translateY(0); }
+            to { transform: translateY(-100%); }
+        }
     </style>
 </head>
 <body>
     <!-- Navigation -->
     <nav id="navbar">
         <div class="container">
-            <div class="logo">Alex Morgan</div>
+            <div class="logo">John Berean</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -504,13 +570,25 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="code-bg">
+const architect = {
+    name: "John Berean",
+    role: "Solution Architect",
+    skills: ["Java", "Python", "AI", "Cloud"],
+    passion: "Building scalable solutions"
+};
+
+function transformBusiness() {
+    return innovation + expertise;
+}
+        </div>
         <div class="container">
             <div class="hero-content">
-                <h1>Marketing That Moves Mountains</h1>
-                <p class="hero-subtitle">Strategic brand architect & digital marketing innovator crafting campaigns that captivate, convert, and create lasting impact</p>
+                <h1>Architecting Tomorrow's Solutions</h1>
+                <p class="hero-subtitle">Solution Architect & Senior Software Engineer specializing in Conversational AI, scalable systems, and transformative technology implementations</p>
                 <div class="cta-buttons">
-                    <a href="#portfolio" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+                    <a href="#experience" class="btn btn-primary">View My Experience</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                 </div>
             </div>
         </div>
@@ -522,98 +600,134 @@
             <h2 class="section-title fade-in">About Me</h2>
             <div class="about-content">
                 <div class="about-text fade-in">
-                    <p>I'm a passionate marketing professional with over 8 years of experience transforming brands and driving exponential growth. My expertise spans digital strategy, brand development, content creation, and data-driven campaign optimization.</p>
-                    <p>I believe in the power of storytelling combined with cutting-edge analytics to create marketing experiences that not only capture attention but drive meaningful business results. Every campaign I craft is designed to forge authentic connections between brands and their audiences.</p>
+                    <p>I'm a passionate Solution Architect and Software Engineer with expertise in transforming legacy systems into modern, AI-powered platforms. Currently leading Vanguard's customer contact center transformation using cutting-edge Conversational AI technologies.</p>
+                    <p>With a strong foundation in Java, Python, and cloud technologies, I specialize in designing scalable, multi-channel solutions that enhance operational efficiency and user experience. My approach combines technical excellence with strategic thinking to deliver solutions that drive real business value.</p>
                     <div class="stats">
                         <div class="stat-item">
-                            <div class="stat-number">150+</div>
-                            <div class="stat-label">Campaigns Launched</div>
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Years Experience</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number">300%</div>
-                            <div class="stat-label">Avg ROI Increase</div>
+                            <div class="stat-number">20%</div>
+                            <div class="stat-label">Efficiency Boost</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number">50+</div>
-                            <div class="stat-label">Brands Transformed</div>
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Team Members Led</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number">2M+</div>
-                            <div class="stat-label">Leads Generated</div>
+                            <div class="stat-number">AI</div>
+                            <div class="stat-label">Specialization</div>
                         </div>
                     </div>
                 </div>
                 <div class="about-image fade-in">
-                    <div style="height: 400px; background: linear-gradient(45deg, #ff6b6b, #4ecdc4); border-radius: 20px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: 600;">Professional Headshot</div>
+                    <div style="height: 400px; background: linear-gradient(45deg, #00d4ff, #7b2ff7); border-radius: 20px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: 600;">
+                        <div style="text-align: center;">
+                            <div style="font-size: 4rem; margin-bottom: 1rem;">👨‍💻</div>
+                            <div>Solution Architect</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title fade-in">Services</h2>
-            <div class="services-grid">
-                <div class="service-card fade-in">
-                    <div class="service-icon">🎯</div>
-                    <h3 class="service-title">Strategic Planning</h3>
-                    <p class="service-description">Comprehensive marketing strategies that align with your business goals and target audience insights for maximum impact.</p>
+            <h2 class="section-title fade-in">Technical Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">💻</div>
+                    <h3 class="skill-title">Programming Languages</h3>
+                    <p class="skill-description">Java, JavaScript, Python - Building robust applications with modern programming paradigms and best practices.</p>
                 </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon">🚀</div>
-                    <h3 class="service-title">Digital Campaigns</h3>
-                    <p class="service-description">Multi-channel digital marketing campaigns across social media, search, email, and content marketing platforms.</p>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">🤖</div>
+                    <h3 class="skill-title">Conversational AI</h3>
+                    <p class="skill-description">Expert in Kore AI platform, designing and implementing intelligent voice, text, and chat applications.</p>
                 </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon">📊</div>
-                    <h3 class="service-title">Analytics & Optimization</h3>
-                    <p class="service-description">Data-driven performance analysis and continuous optimization to maximize ROI and campaign effectiveness.</p>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">☁️</div>
+                    <h3 class="skill-title">Cloud & DevOps</h3>
+                    <p class="skill-description">AWS, CI/CD pipelines, containerization, and infrastructure as code for scalable deployments.</p>
                 </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon">🎨</div>
-                    <h3 class="service-title">Brand Development</h3>
-                    <p class="service-description">Complete brand identity creation and positioning strategies that resonate with your target market.</p>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">🏗️</div>
+                    <h3 class="skill-title">Architecture Design</h3>
+                    <p class="skill-description">Microservices, system design, API development, and enterprise architecture patterns.</p>
                 </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon">📝</div>
-                    <h3 class="service-title">Content Creation</h3>
-                    <p class="service-description">Compelling content strategies including copywriting, visual design, and multimedia content production.</p>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">📊</div>
+                    <h3 class="skill-title">Database Systems</h3>
+                    <p class="skill-description">DBMS expertise including MySQL, designing efficient data models and optimization strategies.</p>
                 </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon">💡</div>
-                    <h3 class="service-title">Growth Consulting</h3>
-                    <p class="service-description">Strategic consulting to identify growth opportunities and implement scalable marketing systems.</p>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">🔄</div>
+                    <h3 class="skill-title">Agile Methodologies</h3>
+                    <p class="skill-description">Agile SCRUM practitioner, leading teams through iterative development and continuous improvement.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
         <div class="container">
-            <h2 class="section-title fade-in">Featured Work</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item fade-in">
-                    <div class="portfolio-image">TechStart Campaign</div>
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">TechStart Product Launch</h3>
-                        <p class="portfolio-description">Comprehensive go-to-market strategy for a SaaS startup resulting in 500% increase in lead generation and $2M in first-year revenue.</p>
+            <h2 class="section-title fade-in">Professional Journey</h2>
+            <div class="experience-timeline">
+                <div class="experience-item fade-in">
+                    <div class="experience-content">
+                        <h3 class="experience-title">Solution Architect</h3>
+                        <p class="experience-company">TCS (Client: Vanguard)</p>
+                        <p class="experience-date">April 2024 – Present</p>
+                        <p class="experience-description">
+                            • Transformed Vanguard's legacy customer contact center into a conversational AI platform<br>
+                            • Designed scalable, multi-channel AI product solutions, boosting self-service containment by 20%<br>
+                            • Led product system design aligning with business objectives
+                        </p>
                     </div>
+                    <div class="experience-dot"></div>
                 </div>
-                <div class="portfolio-item fade-in">
-                    <div class="portfolio-image">EcoFashion Rebrand</div>
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">EcoFashion Brand Transformation</h3>
-                        <p class="portfolio-description">Complete brand overhaul and digital marketing strategy for sustainable fashion brand, achieving 200% growth in online sales.</p>
+                <div class="experience-item fade-in">
+                    <div class="experience-content">
+                        <h3 class="experience-title">Tech Lead</h3>
+                        <p class="experience-company">Cigna</p>
+                        <p class="experience-date">April 2022 – March 2024</p>
+                        <p class="experience-description">
+                            • Led adoption of Kore AI for Conversational AI development projects<br>
+                            • Served as principal system designer for frontend and backend AI platforms<br>
+                            • Provided expert consultation across all application phases
+                        </p>
                     </div>
+                    <div class="experience-dot"></div>
                 </div>
-                <div class="portfolio-item fade-in">
-                    <div class="portfolio-image">HealthTech Initiative</div>
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">HealthTech Social Campaign</h3>
-                        <p class="portfolio-description">Multi-platform social media campaign for healthcare technology company, reaching 5M+ impressions and driving 40% app downloads increase.</p>
+                <div class="experience-item fade-in">
+                    <div class="experience-content">
+                        <h3 class="experience-title">Senior Software Engineer</h3>
+                        <p class="experience-company">Cigna</p>
+                        <p class="experience-date">April 2021 – March 2022</p>
+                        <p class="experience-description">
+                            • Developed voice, text, and chat applications using Conversational AI<br>
+                            • Led a team of 15 developers ensuring alignment with product requirements<br>
+                            • Automated processes, boosting team velocity by 20%
+                        </p>
                     </div>
+                    <div class="experience-dot"></div>
+                </div>
+                <div class="experience-item fade-in">
+                    <div class="experience-content">
+                        <h3 class="experience-title">Software Engineer I</h3>
+                        <p class="experience-company">Brooksource (Client: Cigna)</p>
+                        <p class="experience-date">Nov 2019 – Sep 2020</p>
+                        <p class="experience-description">
+                            • Implemented IVR technology using Java, Spring Boot, and MySQL<br>
+                            • Upgraded software to enhance functionality and customer experience<br>
+                            • Provided on-call support for production IVR systems
+                        </p>
+                    </div>
+                    <div class="experience-dot"></div>
                 </div>
             </div>
         </div>
@@ -622,7 +736,7 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title fade-in">Let's Create Something Amazing</h2>
+            <h2 class="section-title fade-in">Let's Build Something Amazing</h2>
             <div class="contact-content">
                 <div class="contact-form fade-in">
                     <form>
@@ -636,7 +750,7 @@
                         </div>
                         <div class="form-group">
                             <label for="project">Project Type</label>
-                            <input type="text" id="project" name="project" placeholder="e.g., Brand Strategy, Digital Campaign">
+                            <input type="text" id="project" name="project" placeholder="e.g., AI Implementation, System Architecture">
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
@@ -650,28 +764,28 @@
                         <div class="contact-icon">📧</div>
                         <div>
                             <h4>Email</h4>
-                            <p>alex.morgan@email.com</p>
+                            <p>jmberean@gmail.com</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">📱</div>
                         <div>
                             <h4>Phone</h4>
-                            <p>+1 (555) 123-4567</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📍</div>
-                        <div>
-                            <h4>Location</h4>
-                            <p>New York, NY</p>
+                            <p>845-709-0867</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">💼</div>
                         <div>
                             <h4>LinkedIn</h4>
-                            <p>linkedin.com/in/alexmorgan</p>
+                            <p>linkedin.com/in/jmberean</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🎓</div>
+                        <div>
+                            <h4>Education</h4>
+                            <p>BS Computer Science - SUNY New Paltz</p>
                         </div>
                     </div>
                 </div>
@@ -682,7 +796,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Alex Morgan. Crafted with passion and precision.</p>
+            <p>&copy; 2025 John Berean. Building the future, one solution at a time.</p>
         </div>
     </footer>
 
@@ -749,7 +863,7 @@
                 element.style.position = 'absolute';
                 element.style.width = Math.random() * 100 + 50 + 'px';
                 element.style.height = element.style.width;
-                element.style.background = `linear-gradient(45deg, rgba(246, 173, 85, 0.08), rgba(66, 153, 225, 0.08))`;
+                element.style.background = `linear-gradient(45deg, rgba(0, 212, 255, 0.08), rgba(123, 47, 247, 0.08))`;
                 element.style.borderRadius = '50%';
                 element.style.left = Math.random() * 100 + '%';
                 element.style.top = Math.random() * 100 + '%';
@@ -765,13 +879,33 @@
         // Parallax effect for hero section
         window.addEventListener('scroll', function() {
             const scrolled = window.pageYOffset;
-            const parallax = document.querySelector('.hero::before');
-            const speed = scrolled * 0.5;
+            const codeBackground = document.querySelector('.code-bg');
             
-            if (parallax) {
-                parallax.style.transform = `translateY(${speed}px)`;
+            if (codeBackground) {
+                codeBackground.style.transform = `translateY(${scrolled * 0.3}px)`;
             }
         });
+
+        // Add typing effect to hero title
+        function typeWriter() {
+            const text = "Architecting Tomorrow's Solutions";
+            const h1 = document.querySelector('.hero h1');
+            h1.textContent = '';
+            let i = 0;
+            
+            function type() {
+                if (i < text.length) {
+                    h1.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(type, 50);
+                }
+            }
+            
+            type();
+        }
+
+        // Start typing effect after page load
+        window.addEventListener('load', typeWriter);
     </script>
 </body>
 </html>
